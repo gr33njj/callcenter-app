@@ -1,0 +1,12 @@
+node_modules/
+.env
+env-production
+client/node_modules/
+client/build/
+*.log
+.DS_Store
+dist/
+*.tar.gz
+test-api.js
+.vscode/
+.idea/
