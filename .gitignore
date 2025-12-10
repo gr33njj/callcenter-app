@@ -10,3 +10,5 @@ dist/
 test-api.js
 .vscode/
 .idea/
+package-lock.json
+client/package-lock.json
