@@ -1,0 +1,18 @@
+[Unit]
+Description=Call Center Reporting System API
+After=network.target postgresql.service
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/callcenter-app
+Environment=NODE_ENV=production
+ExecStart=/usr/bin/node server/index.js
+Restart=always
+RestartSec=10
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=callcenter-api
+
+[Install]
+WantedBy=multi-user.target
