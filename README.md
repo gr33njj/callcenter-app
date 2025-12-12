@@ -113,12 +113,12 @@ nano .env
 node server/scripts/init-db.js
 ```
 
-Будут созданы пользователи:
-- `admin` / `admin123` (роль: admin)
-- `supervisor` / `supervisor123` (роль: supervisor)
-- `manager` / `manager123` (роль: management)
+Будут созданы пользователи с ролями:
+- `admin` (роль: admin) - полный доступ
+- `supervisor` (роль: supervisor) - ввод данных
+- `manager` (роль: management) - просмотр отчетов
 
-**⚠️ ВАЖНО: Смените пароли после первого входа!**
+**⚠️ ВАЖНО: Установите безопасные пароли при инициализации базы данных!**
 
 ### 4. Сборка frontend
 
